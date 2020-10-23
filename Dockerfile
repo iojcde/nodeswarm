@@ -1,9 +1,13 @@
 FROM node
-RUN mkdir -p /usr/src/app
-COPY index.js /usr/src/app
-COPY public /usr/src/app/public
-COPY router /usr/src/app/router
+WORKDIR /usr/src/app
+COPY index.js . 
+COPY public ./public
+COPY router ./router
+COPY package.json .
+COPY package-lock.json .
+RUN npm install 
+
 EXPOSE 8080
-CMD ["npm", "install", "helmet","express"]
 CMD [ "node", "/usr/src/app/index" ]
+
 
