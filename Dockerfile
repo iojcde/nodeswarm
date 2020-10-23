@@ -4,5 +4,6 @@ COPY index.js /usr/src/app
 COPY public /usr/src/app/public
 COPY router /usr/src/app/router
 EXPOSE 8080
+CMD ["npm", "install", "helmet","express"]
 CMD [ "node", "/usr/src/app/index" ]
 
