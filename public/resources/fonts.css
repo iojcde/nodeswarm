@@ -1,0 +1,24 @@
+@font-face{
+font-family:GoogleProductRegular;
+    src=url(/product-sans-regular.ttf);
+}
+
+@font-face{
+font-family:GoogleProductBold;
+    src=url(/product-sans-bold.ttf);
+}
+
+@font-face{
+font-family:GoogleProductItalic;
+    src=url(/product-sans-italic.ttf);
+}
+
+@font-face{
+font-family:GoogleProductBoldItalic;
+    src=url(/product-sans-bold-italic.ttf);
+}
+
+p{
+    font-family: GoogleProductRegular,Helvetica, Arial, sans-serif;
+    font-size-adjust: 0.49;
+}
