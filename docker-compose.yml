@@ -20,7 +20,7 @@ services:
      - web
 
   proxy:
-    image: dockercloud/haproxy
+    image: haproxy
     depends_on:
       - testimony
     environment:
